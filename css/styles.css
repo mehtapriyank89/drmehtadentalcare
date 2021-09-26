@@ -1,0 +1,346 @@
+html, body {
+    height: 100% !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 1.2rem !important;
+    margin: 0;
+    padding: 0;
+}
+
+nav, .navbar-fixed {
+    height: 50px !important;
+    line-height: 50px !important;
+}
+
+.sidenav-trigger {
+    top: 10px;
+}
+
+.branding .site-title {
+    background: url("../images/IMG-20210205-WA00161.jpg") center left / contain no-repeat;
+    width: 100%;
+    height: 80px;
+    margin: 10px 0;
+    cursor: pointer;
+    text-indent: -9999px;
+}
+
+.hide-on-med-and-down .navbar-fixed .brand-logo {
+    padding-right: 40px !important;
+}
+
+.hide-on-med-and-down .brand-logo, .brand-logo div {
+    height: 100% !important;
+    top: 12px !important;
+}
+
+.hide-on-large-only .brand-logo {
+    height: 100% !important;
+    top: 7px !important;
+}
+
+.hide-on-large-only nav {
+    line-height: 30px !important;
+}
+
+.hide-on-large-only img {
+    height: 40px;
+}
+
+.hide-on-large-only .team-name {
+    height: 20px !important;
+    font-size: 1rem;
+    display: block;
+    position: absolute;
+    left: 36%;
+    top: 58%;
+}
+
+#content-section {
+    padding: 0 !important;
+    overflow: hidden !important;
+}
+
+.home-background {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/SelfieCity_20210817191420_org1.jpg") center;
+    background-size: cover;
+    background-position-y: 40%;
+}
+
+.slogan-content {
+    margin: 400px 0 95px;
+    position: absolute;
+    bottom: -50px;
+    left: 40px;
+}
+
+.slogan-text {
+    font-family: 'Special Elite', cursive;
+    font-size: 60px;
+    color: #fff;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: left;
+}
+
+#welcome {
+    background: url("../images/all-bg.jpeg");
+    height: 100vh;
+}
+
+.welcome-content {
+    padding-top: 100px;
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+    color: #333333;
+}
+
+.welcome-content h1 {
+    font-size: 42px!important;
+    font-family: 'Special Elite', cursive;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+.welcome-content h1::after {
+    display: block;
+    content: '';
+    width: 90px;
+    height: 2px;
+    background-color: #4fc1bc;
+    margin: 20px auto;
+}
+
+.welcome-content p {
+    font-size: 1.2rem!important;
+    font-weight: 400;
+}
+
+#mission {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../images/472f9f6b176af7f76633240a059b7fa1405c2f8459b6764a5ebe6.jpeg") center;
+    background-size: cover;
+    background-position-y: 40%;
+}
+
+.mission-content {
+    color: whitesmoke;
+}
+
+.about-content {
+    padding: 60px 20px;
+}
+
+.doctors-content {
+    margin: 0 0 0 60px !important;
+    padding: 60px 20px;
+}
+
+.profile-content {
+    max-width: 1000px;
+    color: #333333;
+    padding-left: 40px !important;
+}
+
+.profile-content .profile-title {
+    font: 50px 'Lusitana',serif;
+    color: #07435d;
+    text-align: left;
+    margin: 0 !important;
+}
+
+.profile-content p {
+    margin-top: 0!important;
+    display: flex;
+}
+
+.profile-content .speciality-item {
+    margin: 0 !important;
+}
+
+.sidenav li a {
+    color: white !important;
+    font-size: 1.1rem !important;
+    font-weight: 400 !important;
+}
+
+li .active {
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.sidenav li .active {
+    font-weight: 500;
+    color: dodgerblue !important;
+}
+
+.hide-on-med-and-down .team-name {
+    position: absolute;
+    left: 44.5%;
+}
+
+.team-name a:hover {
+    background-color: transparent !important;
+    text-decoration: none !important;
+}
+
+.hide-on-med-and-down .team-name a {
+    font-weight: 500;
+    font-size: 1.2rem !important;
+}
+
+#nav-mobile {
+    padding-left: 20px;
+    font-weight: 100;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-mobile li {
+    padding: 15px 40px;
+    font: 500 12px 'Montserrat',sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+
+#nav-mobile li a {
+    font-size: 0.8rem;
+}
+
+.team-member-name {
+    font-weight: 600;
+}
+
+.team-member-title {
+    font-weight: 400;
+    font-size: 1rem !important;
+}
+
+.team-member-email {
+    font-weight: 500;
+    font-size: 1rem !important;
+}
+
+.team-member-email span {
+    color: black !important;
+}
+
+.divider {
+    height: 1px !important;
+    margin: 10px;
+}
+
+.banner {
+    background-color: #2d343a;
+    padding: 30px 0;
+    text-align: center;
+    margin-top: -1px;
+    font-family: 'Special Elite', cursive;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.section {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+#content-section #home {
+    min-height: 100vh !important;
+}
+
+#content-section .scrollspy {
+    min-height: 90vh !important;
+}
+
+#content-section #team {
+    padding-top: 50px;
+}
+
+.mentor-title {
+    font-size: 1.3rem !important;
+    font-weight: 600 !important;
+    padding-bottom: 10px;
+}
+
+.mentor-card {
+    margin: 0 !important;
+}
+
+#mentors .flow-text {
+    text-align: justify;
+    font-size: 1rem !important;
+}
+
+.team-member-title {
+    padding-bottom: 10px;
+}
+
+.fa-envelope {
+    padding-right: 3px !important;
+}
+
+table td {
+    font-size: 1rem !important;
+}
+
+.completed {
+    color: green;
+}
+
+.inprogress {
+    color: blue;
+}
+
+.notStarted {
+    color: orange;
+}
+
+.pending {
+    color: red;
+}
+
+@media only screen and (max-width: 768px) {
+    #content-section #mentors {
+        min-height: 80vh !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #content-section #mentors {
+        min-height: 230vh !important;
+    }
+
+    #content-section #home {
+        min-height: 130vh !important;
+    }
+
+    .mentor-title {
+        font-size: 1.1rem !important;
+    }
+
+    .mentor-card .flow-text {
+        font-size: 1rem !important;
+    }
+
+    #home .project-title {
+        font-size: 1.2rem !important;
+    }
+
+    #home .project-desc-title {
+        font-size: 1.1rem !important;
+    }
+
+    #home .project-desc {
+        font-size: 1rem !important;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    #content-section #home {
+        min-height: 160vh !important;
+    }
+}
