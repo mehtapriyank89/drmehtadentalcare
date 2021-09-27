@@ -40,35 +40,45 @@
 
 <body>
 
-<div class="row">
-    <div class="hide-on-med-and-down">
-        <div class="navbar-fixed">
-            <nav class="black">
-                <div class="nav-wrapper">
-                    <ul id="nav-mobile">
-                        <li><a href="#home" aria-label="Home">Home</a></li>
-                        <li><a href="#about" aria-label="About">About</a></li>
-                        <li><a href="#services" aria-label="Services">Services</a></li>
-                        <li><a href="#clinic-tour" aria-label="Meetings">Clinic Tour</a></li>
-                        <li><a href="#smile-gallery" aria-label="Smile Gallery">Smile Gallery</a></li>
-                        <li><a href="#contact" aria-label="Contact">Contact</a></li>
-                    </ul>
+<div class="row logo-bg-color" style="margin-bottom: 0; z-index: 6; position: relative">
+    <div class="container">
+        <header class="branding">
+            <div class="row">
+                <div class="col s6">
+                    <div class="site-title">
+                        DR.MEHTA's DENTAL CARE
+                    </div>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </header>
+    </div>
+</div>
+
+<div class="row">
+    <div class="hide-on-med-and-down navbar-sticky">
+        <nav class="logo-bg-color">
+            <div class="nav-wrapper">
+                <ul id="nav-mobile">
+                    <li><a href="#home" aria-label="Home">Home</a></li>
+                    <li><a href="#about" aria-label="About">About</a></li>
+                    <li><a href="#services" aria-label="Services">Services</a></li>
+                    <li><a href="#clinic-tour" aria-label="Meetings">Clinic Tour</a></li>
+                    <li><a href="#smile-gallery" aria-label="Smile Gallery">Smile Gallery</a></li>
+                    <li><a href="#contact" aria-label="Contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
     </div>
 
-    <div class="hide-on-large-only">
-        <div class="navbar-fixed">
-            <nav class="blue-grey darken-4">
-                <div class="nav-wrapper">
+    <div class="hide-on-large-only logo-bg-color navbar-sticky">
+            <nav class="logo-bg-color">
+                <div class="nav-wrapper" style="display: flex; align-items: end">
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 </div>
             </nav>
-        </div>
     </div>
 
-    <ul class="sidenav blue-grey darken-4" id="mobile-demo">
+    <ul class="sidenav logo-bg-color" id="mobile-demo">
         <li><a href="#home" aria-label="Home">Home</a></li>
         <li><a href="#about" aria-label="About">About</a></li>
         <li><a href="#services" aria-label="Services">Services</a></li>
@@ -79,17 +89,18 @@
 
     <div id="content-section" class="col s12 center">
         <div class="home-background">
-            <div id="home" class="section scrollspy container">
-                <header class="branding">
-                    <div class="row">
-                        <div class="col s6">
-                            <div class="site-title">
-                                DR.MEHTA's DENTAL CARE
-                            </div>
-                        </div>
+            <div id="home" class="section scrollspy">
+                <img src="images/SelfieCity_20210817191420_org1.jpg" alt="doctors-pic" class="responsive-img"
+                style="margin-bottom: -10px;">
+                <div class="hide-on-large-only mobile-slogan-content">
+                    <div>
+                        Your Smile.
                     </div>
-                </header>
-                <div class="slogan-content">
+                    <div>
+                        Our Passion.
+                    </div>
+                </div>
+                <div class="hide-on-med-and-down slogan-content">
                     <div class="slogan-text">
                         Your Smile.
                     </div>
@@ -105,7 +116,7 @@
                 Amazing service. Exceptional results.
             </div>
 
-            <div class="welcome-content">
+            <div class="container welcome-content">
                 <h1 class="center">
                     Welcome to Dr.Mehta's Dental Care
                 </h1>
@@ -117,15 +128,11 @@
         </div>
 
         <div id="about" class="section scrollspy">
-            <div class="banner">
-                About Us
-            </div>
-
             <div class="row about-content">
-                <div class="col s6">
+                <div class="col s12 l6">
                     <img src="images/VIN_0676.JPG" alt="about-image" class="responsive-img">
                 </div>
-                <div class="col s6 welcome-content">
+                <div class="col s12 l6 about-content">
                     <h1 class="center">
                         Giving excellent care to every patient.
                     </h1>
@@ -140,11 +147,7 @@
         </div>
 
         <div id="mission" class="section scrollspy">
-            <div class="banner">
-                Our Mission
-            </div>
-
-            <div class="welcome-content mission-content">
+            <div class="container mission-content">
                 <h1 class="center">
                     Make your dream smile a reality!
                 </h1>
@@ -156,47 +159,40 @@
             </div>
         </div>
 
-        <div id="services" class="section scrollspy">
-            <div class="banner">
-                Our Services
-            </div>
+<!--        <div id="services" class="section scrollspy">-->
+<!--            <div class="banner">-->
+<!--                Our Services-->
+<!--            </div>-->
 
-            <div class="welcome-content">
-                <h1 class="center">
-                    Make your dream smile a reality!
-                </h1>
-                <p>
-                    Our mission is to help you smile with confidence. We have established a dental practice built around
-                    you and your comfort. We use only the best in technology, tools, and medical best practices to
-                    ensure you get the best care possible.
-                </p>
-            </div>
-        </div>
+<!--            <div class="welcome-content">-->
+<!--                <h1 class="center">-->
+<!--                    Make your dream smile a reality!-->
+<!--                </h1>-->
+<!--                <p>-->
+<!--                    Our mission is to help you smile with confidence. We have established a dental practice built around-->
+<!--                    you and your comfort. We use only the best in technology, tools, and medical best practices to-->
+<!--                    ensure you get the best care possible.-->
+<!--                </p>-->
+<!--            </div>-->
+<!--        </div>-->
 
-        <div id="clinic-tour" class="section scrollspy">
-            <div class="banner">
-                Clinic Tour
-            </div>
-
-            <div class="welcome-content">
-                <h1 class="center">
-                    Make your dream smile a reality!
-                </h1>
-                <p>
-                    Our mission is to help you smile with confidence. We have established a dental practice built around
-                    you and your comfort. We use only the best in technology, tools, and medical best practices to
-                    ensure you get the best care possible.
-                </p>
-            </div>
-        </div>
+<!--        <div id="clinic-tour" class="section scrollspy">-->
+<!--            <div class="banner">-->
+<!--                Clinic Tour-->
+<!--            </div>-->
+<!--        </div>-->
 
         <div id="doctors" class="section scrollspy">
             <div class="banner">
                 Meet The Doctors
             </div>
 
+<!--            <div>-->
+<!--                <img src="images/all-bg.jpeg" alt="doctors-pic" class="responsive-img">-->
+<!--            </div>-->
+
             <div class="doctors-content row">
-                <div class="col s3">
+                <div class="col s12 l3">
                     <img src="images/SelfieCity_20210817185801_org.jpg" alt="priyank-image" class="responsive-img">
                 </div>
                 <div class="col profile-content">
@@ -222,7 +218,7 @@
             </div>
 
             <div class="doctors-content row">
-                <div class="col s3">
+                <div class="col s12 l3">
                     <img src="images/SelfieCity_20210817075210_org.jpg" alt="rujuta-image" class="responsive-img">
                 </div>
                 <div class="col profile-content">

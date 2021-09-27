@@ -6,13 +6,23 @@ html, body {
     padding: 0;
 }
 
-nav, .navbar-fixed {
+nav {
     height: 50px !important;
     line-height: 50px !important;
 }
 
+.navbar-sticky {
+    top: 0;
+    position: sticky;
+    z-index: 10;
+}
+
 .sidenav-trigger {
     top: 10px;
+}
+
+.logo-bg-color {
+    background-color: #0b0b0e;
 }
 
 .branding .site-title {
@@ -60,17 +70,18 @@ nav, .navbar-fixed {
     overflow: hidden !important;
 }
 
-.home-background {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/SelfieCity_20210817191420_org1.jpg") center;
-    background-size: cover;
-    background-position-y: 40%;
+.mobile-slogan-content {
+    padding: 20px 0;
+    background-color: black;
+    color: yellowgreen !important;
+    font-size: 1.5rem !important;
+    font-family: 'Special Elite', cursive;
 }
 
 .slogan-content {
-    margin: 400px 0 95px;
     position: absolute;
-    bottom: -50px;
-    left: 40px;
+    bottom: 0;
+    left: 70px;
 }
 
 .slogan-text {
@@ -89,13 +100,16 @@ nav, .navbar-fixed {
 
 .welcome-content {
     padding-top: 100px;
+}
+
+.welcome-content, .mission-content {
     max-width: 1000px;
     text-align: center;
     margin: 0 auto;
     color: #333333;
 }
 
-.welcome-content h1 {
+.welcome-content h1, .about-content h1, .mission-content h1 {
     font-size: 42px!important;
     font-family: 'Special Elite', cursive;
     font-weight: 800;
@@ -103,7 +117,7 @@ nav, .navbar-fixed {
     padding-bottom: 5px;
 }
 
-.welcome-content h1::after {
+.welcome-content h1::after, .about-content h1::after, .mission-content h1::after {
     display: block;
     content: '';
     width: 90px;
@@ -112,7 +126,7 @@ nav, .navbar-fixed {
     margin: 20px auto;
 }
 
-.welcome-content p {
+.welcome-content p, .about-content p, .mission-content p {
     font-size: 1.2rem!important;
     font-weight: 400;
 }
@@ -126,6 +140,7 @@ nav, .navbar-fixed {
 
 .mission-content {
     color: whitesmoke;
+    padding-top: 150px;
 }
 
 .about-content {
@@ -134,7 +149,7 @@ nav, .navbar-fixed {
 
 .doctors-content {
     margin: 0 0 0 60px !important;
-    padding: 60px 20px;
+    padding: 20px;
 }
 
 .profile-content {
@@ -175,21 +190,6 @@ li .active {
     color: dodgerblue !important;
 }
 
-.hide-on-med-and-down .team-name {
-    position: absolute;
-    left: 44.5%;
-}
-
-.team-name a:hover {
-    background-color: transparent !important;
-    text-decoration: none !important;
-}
-
-.hide-on-med-and-down .team-name a {
-    font-weight: 500;
-    font-size: 1.2rem !important;
-}
-
 #nav-mobile {
     padding-left: 20px;
     font-weight: 100;
@@ -210,24 +210,6 @@ li .active {
     font-size: 0.8rem;
 }
 
-.team-member-name {
-    font-weight: 600;
-}
-
-.team-member-title {
-    font-weight: 400;
-    font-size: 1rem !important;
-}
-
-.team-member-email {
-    font-weight: 500;
-    font-size: 1rem !important;
-}
-
-.team-member-email span {
-    color: black !important;
-}
-
 .divider {
     height: 1px !important;
     margin: 10px;
@@ -236,6 +218,7 @@ li .active {
 .banner {
     background-color: #2d343a;
     padding: 30px 0;
+    margin-bottom: 50px;
     text-align: center;
     margin-top: -1px;
     font-family: 'Special Elite', cursive;
@@ -248,99 +231,93 @@ li .active {
     padding-bottom: 0 !important;
 }
 
-#content-section #home {
-    min-height: 100vh !important;
-}
+@media only screen and (max-width: 1024px) {
+    #nav-mobile li {
+        padding: 20px 4px;
+    }
 
-#content-section .scrollspy {
-    min-height: 90vh !important;
-}
+    .slogan-content {
+        top: 600px;
+    }
 
-#content-section #team {
-    padding-top: 50px;
-}
-
-.mentor-title {
-    font-size: 1.3rem !important;
-    font-weight: 600 !important;
-    padding-bottom: 10px;
-}
-
-.mentor-card {
-    margin: 0 !important;
-}
-
-#mentors .flow-text {
-    text-align: justify;
-    font-size: 1rem !important;
-}
-
-.team-member-title {
-    padding-bottom: 10px;
-}
-
-.fa-envelope {
-    padding-right: 3px !important;
-}
-
-table td {
-    font-size: 1rem !important;
-}
-
-.completed {
-    color: green;
-}
-
-.inprogress {
-    color: blue;
-}
-
-.notStarted {
-    color: orange;
-}
-
-.pending {
-    color: red;
+    #welcome, #mission {
+        height: 60vh;
+    }
 }
 
 @media only screen and (max-width: 768px) {
-    #content-section #mentors {
-        min-height: 80vh !important;
+    #nav-mobile li {
+        padding: 10px 5px;
+    }
+
+    #welcome, #mission {
+        height: 70vh;
+    }
+
+    .welcome-content {
+        padding-top: 20px !important;
+    }
+
+    .banner {
+        font-size: 2.3rem !important;
+        margin-bottom: 20px !important;
+    }
+
+    .mobile-slogan-content {
+        font-size: 2rem !important;
+    }
+
+    .doctors-content {
+        margin-left: 0 !important;
+    }
+
+    .doctors-content img {
+        padding-bottom: 40px !important;
+    }
+
+    .profile-content h1 {
+        font-size: 3rem !important;
+    }
+
+    .profile-content p {
+        font-size: 1.6rem !important;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    #content-section #mentors {
-        min-height: 230vh !important;
+    .banner {
+        font-size: 1.5rem !important;
     }
 
-    #content-section #home {
-        min-height: 130vh !important;
+    .welcome-content h1, .about-content h1, .mission-content h1 {
+        font-size: 1.3rem !important;
     }
 
-    .mentor-title {
-        font-size: 1.1rem !important;
-    }
-
-    .mentor-card .flow-text {
+    .welcome-content p, .about-content p, .mission-content p {
         font-size: 1rem !important;
     }
 
-    #home .project-title {
-        font-size: 1.2rem !important;
+    #mission {
+        height: 60vh;
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../images/472f9f6b176af7f76633240a059b7fa1405c2f8459b6764a5ebe6.jpeg") center;
+        background-size: cover;
     }
 
-    #home .project-desc-title {
-        font-size: 1.1rem !important;
+    .mission-content {
+        padding-top: 50px !important;
     }
 
-    #home .project-desc {
-        font-size: 1rem !important;
+    .profile-content h1 {
+        font-size: 1.7rem !important;
+    }
+
+    .profile-content p {
+        font-size: 1.4rem !important;
     }
 }
 
 @media only screen and (max-width: 360px) {
     #content-section #home {
-        min-height: 160vh !important;
+        /*min-height: 160vh !important;*/
     }
 }
