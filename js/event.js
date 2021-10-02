@@ -1,11 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const elems = document.querySelectorAll('.scrollspy');
-    M.ScrollSpy.init(elems, {
+    const scrollSpyEle = document.querySelectorAll('.scrollspy');
+    M.ScrollSpy.init(scrollSpyEle, {
         scrollOffset: 70,
     });
-});
 
-document.addEventListener('DOMContentLoaded', function () {
-    const elems = document.querySelectorAll('.sidenav');
-    M.Sidenav.init(elems);
+    const sideNavEle = document.querySelectorAll('.sidenav');
+    M.Sidenav.init(sideNavEle);
+
+    const carouselEle = document.querySelectorAll('.carousel');
+    M.Carousel.init(carouselEle, {
+        indicators: true
+    });
 });

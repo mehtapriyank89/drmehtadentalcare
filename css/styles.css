@@ -17,6 +17,13 @@ nav {
     z-index: 10;
 }
 
+.appointment-btn {
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    width: fit-content;
+}
+
 .sidenav-trigger {
     top: 10px;
 }
@@ -26,12 +33,10 @@ nav {
 }
 
 .branding .site-title {
-    background: url("../images/IMG-20210205-WA00161.jpg") center left / contain no-repeat;
-    width: 100%;
-    height: 80px;
-    margin: 10px 0;
-    cursor: pointer;
-    text-indent: -9999px;
+    color: yellowgreen;
+    font: 800 60px 'Montserrat',sans-serif;
+    height: 100px;
+    line-height: 100px;
 }
 
 .hide-on-med-and-down .navbar-fixed .brand-logo {
@@ -99,7 +104,7 @@ nav {
 }
 
 .welcome-content {
-    padding-top: 100px;
+    padding-top: 30px;
 }
 
 .welcome-content, .mission-content {
@@ -231,7 +236,54 @@ li .active {
     padding-bottom: 0 !important;
 }
 
+.carousel img {
+    width: 600px !important;
+}
+
+.carousel {
+    margin-bottom: 50px !important;
+}
+
+#map {
+    height: 600px;
+    width: 100%;
+}
+
+footer {
+    color: white;
+    padding: 30px 0;
+    margin-top: -7px;
+}
+
+.address {
+    text-align: left;
+}
+
+.address-line {
+    font: 400 15px 'Montserrat',sans-serif;
+    display: inline-block;
+    margin-bottom: 5px;
+    line-height: 22px;
+}
+
+.week-day {
+    min-width: 36px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.rights-reserved {
+    padding-top: 20px;
+    font: 400 12px 'Montserrat',sans-serif;
+}
+
 @media only screen and (max-width: 1024px) {
+    .branding .site-title {
+        font-size: 50px;
+        line-height: 1.5;
+        height: 75px;
+    }
+
     #nav-mobile li {
         padding: 20px 4px;
     }
@@ -248,6 +300,10 @@ li .active {
 @media only screen and (max-width: 768px) {
     #nav-mobile li {
         padding: 10px 5px;
+    }
+
+    .nav-wrapper .sidenav-trigger {
+        height: 65px !important;
     }
 
     #welcome, #mission {
@@ -285,8 +341,18 @@ li .active {
 }
 
 @media only screen and (max-width: 600px) {
+    .branding .site-title {
+        font-size: 25px;
+        line-height: 1.5;
+        height: 75px;
+    }
+
     .banner {
         font-size: 1.5rem !important;
+    }
+
+    .nav-wrapper .sidenav-trigger {
+        height: 62px !important;
     }
 
     .welcome-content h1, .about-content h1, .mission-content h1 {
