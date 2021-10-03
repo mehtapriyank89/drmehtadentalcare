@@ -288,8 +288,10 @@ footer {
 }
 
 .rights-reserved {
-    padding-top: 20px;
+    padding-bottom: 40px;
     font: 400 12px 'Montserrat',sans-serif;
+    background-color: #0b0b0e;
+    color: yellowgreen;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -376,8 +378,8 @@ footer {
     }
 
     .nav-wrapper .sidenav-trigger {
-        height: 62px !important;
         margin-left: 0 !important;
+        margin-bottom: -2px !important;
     }
 
     .welcome-content h1, .about-content h1, .mission-content h1 {
