@@ -85,8 +85,8 @@ nav {
 
 .slogan-content {
     position: absolute;
-    bottom: 0;
-    left: 70px;
+    bottom: 300px;
+    left: 10px;
 }
 
 .slogan-text {
@@ -241,12 +241,26 @@ li .active {
 }
 
 .carousel {
-    margin-bottom: 50px !important;
+    margin: 50px 0 !important;
 }
 
 #map {
     height: 600px;
     width: 100%;
+}
+
+.service-container {
+    padding: 0 50px;
+}
+
+.service-container img {
+    height: 320px;
+    width: 440px
+}
+
+.service-title {
+    padding: 20px 0;
+    font: 800 25px 'Montserrat',sans-serif;
 }
 
 footer {
@@ -257,6 +271,7 @@ footer {
 
 .address {
     text-align: left;
+    margin-top: 20px;
 }
 
 .address-line {
@@ -295,6 +310,15 @@ footer {
     #welcome, #mission {
         height: 60vh;
     }
+
+    .service-title {
+        font-size: 20px;
+    }
+
+    .service-container img {
+        height: 250px;
+        width: 300px
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -320,7 +344,7 @@ footer {
     }
 
     .mobile-slogan-content {
-        font-size: 2rem !important;
+        font-size: 1.2rem !important;
     }
 
     .doctors-content {
@@ -380,6 +404,11 @@ footer {
 
     .profile-content p {
         font-size: 1.4rem !important;
+    }
+
+    .service-container img {
+        height: 250px;
+        width: 320px
     }
 }
 
